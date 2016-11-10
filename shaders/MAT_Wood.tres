@@ -2,7 +2,7 @@
 
 [ext_resource path="res://shaders/Master_shader_generic.tres" type="Shader" id=1]
 [ext_resource path="res://tex/null_white.jpeg" type="Texture" id=2]
-[ext_resource path="res://tex/wood1.jpeg" type="Texture" id=3]
+[ext_resource path="res://tex/wood1.tres" type="Texture" id=3]
 [ext_resource path="res://tex/wood1_nm.png" type="Texture" id=4]
 
 [resource]
@@ -18,7 +18,7 @@ params/blend_mode = 0
 params/depth_draw = 1
 params/line_width = 0.0
 shader/shader = ExtResource( 1 )
-shader_param/UVTILE = null
+shader_param/UVTILE = 8.767
 shader_param/AO = ExtResource( 2 )
 shader_param/DIFF_ = ExtResource( 3 )
 shader_param/Normal_Punch = 0.486

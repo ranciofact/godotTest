@@ -1,16 +1,20 @@
-[gd_scene load_steps=6 format=1]
+[gd_scene load_steps=10 format=1]
 
 [ext_resource path="res://scenes/main_floor.scn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/bg_tower1.scn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/bg_tower2.scn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/bg_tower3.scn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/upper_bridge.scn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/building1.scn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/water.scn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/handrails.scn" type="PackedScene" id=8]
 
 [sub_resource type="Environment" id=1]
 
 ambient_light/enabled = true
 ambient_light/color = Color( 0.685364, 0.739941, 0.769531, 1 )
 ambient_light/energy = 0.26
-fxaa/enabled = true
+fxaa/enabled = false
 background/mode = 2
 background/color = Color( 0.8125, 0.938477, 1, 1 )
 background/energy = 4.58
@@ -37,7 +41,7 @@ hdr/glow_scale = 0.78
 hdr/min_luminance = 0.01
 hdr/max_luminance = 8.23
 hdr/exposure_adj_speed = 0.5
-fog/enabled = true
+fog/enabled = false
 fog/begin = 11.28
 fog/begin_color = Color( 0.371094, 0.260925, 0, 1 )
 fog/end_color = Color( 1, 1, 1, 1 )
@@ -72,15 +76,15 @@ colors/diffuse = Color( 0.933594, 0.865785, 0.685608, 1 )
 colors/specular = Color( 1, 1, 1, 1 )
 shadow/shadow = true
 shadow/darkening = 0.0
-shadow/z_offset = 0.069
-shadow/z_slope_scale = 0.0
-shadow/esm_multiplier = 60.0
+shadow/z_offset = 0.224
+shadow/z_slope_scale = 0.137
+shadow/esm_multiplier = 3.4
 shadow/blur_passes = 4.0
 projector = null
 operator = 0
 shadow/mode = 3
-shadow/max_distance = 31.09
-shadow/split_weight = 0.37
+shadow/max_distance = 71.37
+shadow/split_weight = 0.01
 shadow/zoffset_scale = 0.37
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="Lights"]
@@ -106,10 +110,22 @@ transform/local = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.3153, 1.90735e-06, 9.
 
 [node name="bg_Tower2" parent="BG_Buildings" instance=ExtResource( 3 )]
 
-transform/local = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -36.0371 )
+transform/local = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.67871, 0, -31.5381 )
+
+[node name="bg_Tower6" parent="BG_Buildings" instance=ExtResource( 3 )]
+
+transform/local = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.803, -0.157429, 22.4206 )
 
 [node name="bg_Tower3" parent="BG_Buildings" instance=ExtResource( 4 )]
 
-transform/local = Transform( -0.755646, 0, -1.35142, 0, 1.54833, 0, 1.35142, 0, -0.755646, 19.5724, 0, -3.28505 )
+transform/local = Transform( -0.755646, 0, -1.35142, 0, 1.54833, 0, 1.35142, 0, -0.755646, -16.6194, 0, -3.10438 )
+
+[node name="upper_bridge" parent="." instance=ExtResource( 5 )]
+
+[node name="building1" parent="." instance=ExtResource( 6 )]
+
+[node name="water" parent="." instance=ExtResource( 7 )]
+
+[node name="handrails" parent="." instance=ExtResource( 8 )]
 
 

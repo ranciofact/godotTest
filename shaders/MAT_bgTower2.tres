@@ -1,9 +1,9 @@
 [gd_resource type="ShaderMaterial" load_steps=5 format=1]
 
 [ext_resource path="res://shaders/Master_shader.tres" type="Shader" id=1]
-[ext_resource path="res://tex/bg_tower2_diff.png" type="Texture" id=2]
+[ext_resource path="res://tex/bg_tower2_diff.tex" type="Texture" id=2]
 [ext_resource path="res://tex/rock1.tres" type="Texture" id=3]
-[ext_resource path="res://scenes/bg_tower2_nm.tex" type="Texture" id=4]
+[ext_resource path="res://tex/bg_tower2_nm.tex" type="Texture" id=4]
 
 [resource]
 

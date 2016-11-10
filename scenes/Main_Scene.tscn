@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=1]
+
+[ext_resource path="res://scenes/bg_tower1.scn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/bg_tower2.scn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/bg_tower3.scn" type="PackedScene" id=3]
+
+[node name="Main_Scene" type="Spatial"]
+
+_import_transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+
+[node name="BG_Buildings" type="Spatial" parent="."]
+
+_import_transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+
+[node name="bg_Tower1" parent="BG_Buildings" instance=ExtResource( 1 )]
+
+transform/local = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.6775, 1.90735e-06, -34.661 )
+
+[node name="bg_Tower2" parent="BG_Buildings" instance=ExtResource( 2 )]
+
+transform/local = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -36.0371 )
+
+[node name="bg_Tower3" parent="BG_Buildings" instance=ExtResource( 3 )]
+
+transform/local = Transform( 1.20325, 0, -0.974431, 0, 1.54833, 0, 0.974431, 0, 1.20325, -14.6518, 0, -43.1067 )
+
+
